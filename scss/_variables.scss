@@ -1,0 +1,33 @@
+// --- Fonts ---
+$ff-primary: "Sora", sans-serif;
+$ff-secondary: "Poppins", sans-serif;
+
+// --- Container ---
+$container-width: 1200px;
+$container-padding: 0 15px;
+
+// --- Colors ---
+$color-primary: linear-gradient(
+  141deg,
+  #3a8ef6 0%,
+  #6f3afa 100%
+); // Основний синій (Кнопки, іконки)
+
+$color-bg-page: #f2f7ff; // Світло-блакитний фон сторінки
+$color-bg-white: #ffffff; // Білий для карток
+$color-bg-info: linear-gradient(
+  145deg,
+  #1678f2 0%,
+  #65a8fb 100%
+); // Інформаційниі блоки, переваги
+
+$color-text-main: #031432; // Темно-синій (Заголовки)
+$color-text-body: #6c87ae; // Світло сірий (Текст опису)
+$color-accent-teal: #00bfa5; // М'ятний (Dr. Matthew Anderson)
+
+// --- Buttons ---
+$btn-weight: 600;
+$btn-size: 18px;
+$btn-color: #fff;
+$btn-bgcolor: $color-primary;
+$btn-shadow: 0 8px 23px 0 rgba(65, 132, 247, 0.24);

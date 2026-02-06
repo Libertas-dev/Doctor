@@ -1,0 +1,48 @@
+@use 'fonts';
+@use 'variables' as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $ff-primary;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+// .reservation {
+//   &-cta-title {
+//   }
+// }
+
+.why-me {
+    &__video {
+        width: 1012px;
+        height: 567px;
+        aspect-ratio: 16 / 9;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// .services {
+//     &__list {
+//         display: flex;
+//         gap: 24px;
+//     }
+// }
+
+// .service-card {
+//     &__icon {
+//     }
+//     &__title {
+//     }
+//     &__text {
+//     }
+//     &__cta {
+//     }
+// }
