@@ -9,14 +9,14 @@
     <body>
         <header class="header">
             <div class="container">
-                <div class="header__logo">
-                    <img src="images/icon/header-icon-plus.png" class="header__logo-ico" alt="" aria-hidden="true" />
-                    <a href="index.html">Doctor</a>
-                </div>
                 <nav class="header__nav">
+                    <a href="index.html" class="header__logo">
+                        <!-- <img src="images/header-icon-plus.svg" class="header__logo-ico" alt="Doctor clinic logo" /> -->
+                        <span>Doctor</span>
+                    </a>
                     <ul class="header__menu">
                         <li class="header__menu-item">
-                            <a href="#hero" class="header__menu-link">Home</a>
+                            <a href="index.html" class="header__menu-link">Home</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#about" class="header__menu-link">About</a>
@@ -28,11 +28,11 @@
                             <a href="#contact" class="header__menu-link">Contact</a>
                         </li>
                     </ul>
+                    <button type="button" class="btn header__cta">
+                        <img src="images/svg/message-icon.svg" alt="" />
+                        <span>Book Now</span>
+                    </button>
                 </nav>
-                <button class="btn btn--secondary header__cta">
-                    <img src="images/svg/message-icon.svg" alt="" aria-hidden="true" />
-                    <span>Book Now</span>
-                </button>
             </div>
         </header>
 
@@ -40,32 +40,48 @@
             <section class="hero" id="hero">
                 <div class="container">
                     <div class="hero__inner">
-                        <p class="hero__uptitle">Dr. Matthew Anderson</p>
-                        <h1 class="hero__title">A dedicated doctor you can trust</h1>
-                        <p class="hero__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum eget vel, nunc nulla feugiat. Metus ut.
-                        </p>
-                        <button class="btn btn--primary hero__cta">
-                            <img src="images/svg/message-icon.svg" alt="" aria-hidden="true" />
-                            <span>Book an appointment</span>
-                        </button>
+                        <div class="hero__content">
+                            <p class="uptitle hero__uptitle">Dr. Matthew Anderson</p>
+                            <h1 class="hero__title">A dedicated doctor you can trust</h1>
+                            <p class="hero__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum eget vel, nunc nulla feugiat. Metus ut.
+                            </p>
+                            <button type="button" class="btn hero__cta">
+                                <img src="images/svg/message-icon.svg" alt="" />
+                                <span>Book an appointment</span>
+                            </button>
+                        </div>
+                        <div class="hero__img-wrapper">
+                            <img src="images/hero-img.png" class="hero__img" alt="" />
+                        </div>
                     </div>
-                    <img src="images/hero-img.png" class="hero__img" alt="" aria-hidden="true" />
                     <ul class="hero__benefits">
-                        <li class="btn btn--accent hero__benefit">
-                            <img src="images/svg/clock.svg" alt="" aria-hidden="true" />
-                            <p class="hero__benefit-title">24 hour service</p>
-                            <p class="hero__benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <li class="info-card hero__benefit">
+                            <div class="hero__benefit-icon">
+                                <img src="images/svg/clock.svg" alt="" />
+                            </div>
+                            <div class="hero__benefit-content">
+                                <h3 class="hero__benefit-title">24 hour service</h3>
+                                <p class="hero__benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
                         </li>
-                        <li class="btn btn--accent hero__benefit">
-                            <img src="images/svg/check-circle.svg" alt="" aria-hidden="true" />
-                            <p class="hero__benefit-title">8 years of experience</p>
-                            <p class="hero__benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <li class="info-card hero__benefit">
+                            <div class="hero__benefit-icon">
+                                <img src="images/svg/check-circle.svg" alt="" />
+                            </div>
+                            <div class="hero__benefit-content">
+                                <h3 class="hero__benefit-title">8 years of experience</h3>
+                                <p class="hero__benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
                         </li>
-                        <li class="btn btn--accent hero__benefit">
-                            <img src="images/svg/plus-circle.svg" alt="" aria-hidden="true" />
-                            <p class="hero__benefit-title">High quality care</p>
-                            <p class="hero__benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
+                        <li class="info-card hero__benefit">
+                            <div class="hero__benefit-icon">
+                                <img src="images/svg/plus-circle.svg" alt="" />
+                            </div>
+                            <div class="hero__benefit-content">
+                                <h3 class="hero__benefit-title">High quality care</h3>
+                                <p class="hero__benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -74,15 +90,15 @@
             <section class="about-me" id="about">
                 <div class="container">
                     <img src="images/about-me.png" alt="Portrait of Dr. Matthew Anderson" />
-                    <p class="about-me__uptitle">About me</p>
+                    <p class="uptitle about-me__uptitle">About me</p>
                     <h2 class="about-me__title">A dedicated doctor with the core mission to help</h2>
                     <p class="about-me__description">
-                        orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique
                         id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate
                         tortor tincidunt.
                     </p>
-                    <button class="btn btn--primary about-me__cta">
-                        <img src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
+                    <button type="button" class="btn about-me__cta">
+                        <img src="images/svg/whatsapp.svg" alt="" />
                         <span>Book an Appointment</span>
                     </button>
                 </div>
@@ -90,88 +106,88 @@
 
             <section class="services" id="services">
                 <div class="container">
-                    <p class="services__uptitle">Services</p>
+                    <p class="uptitle services__uptitle">Services</p>
                     <h2 class="services__title">Experienced in multiple medical practices</h2>
                     <p class="services__description">
-                        orem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas viverra turpis habitant eu sociis fermentum
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas viverra turpis habitant eu sociis fermentum
                         felis.
                     </p>
 
-                    <button class="btn btn--primary services__cta">
-                        <img src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
+                    <button type="button" class="btn services__cta">
+                        <img src="images/svg/whatsapp.svg" alt="" />
                         <span>Book an appointment</span>
                     </button>
 
                     <ul class="services__list">
                         <li class="service-card">
-                            <img class="service-card__icon" src="images/General.png" alt="" aria-hidden="true" />
+                            <img class="service-card__icon" src="images/General.png" alt="" />
                             <h3 class="service-card__title">General</h3>
                             <p class="service-card__description">
                                 Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
                             </p>
-                            <button class="btn btn--primary service-card__cta">
-                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
-                                <span>Book an Appoinment</span>
+                            <button type="button" class="btn service-card__cta">
+                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" />
+                                <span>Book an Appointment</span>
                             </button>
                         </li>
 
                         <li class="service-card">
-                            <img class="service-card__icon" src="images/Pediatrics.png" alt="" aria-hidden="true" />
+                            <img class="service-card__icon" src="images/Pediatrics.png" alt="" />
                             <h3 class="service-card__title">Pediatrics</h3>
                             <p class="service-card__description">
                                 Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
                             </p>
-                            <button class="btn btn--primary service-card__cta">
-                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
-                                <span>Book an Appoinment</span>
+                            <button type="button" class="btn service-card__cta">
+                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" />
+                                <span>Book an Appointment</span>
                             </button>
                         </li>
 
                         <li class="service-card">
-                            <img class="service-card__icon" src="images/Nutritional.png" alt="" aria-hidden="true" />
+                            <img class="service-card__icon" src="images/Nutritional.png" alt="" />
                             <h3 class="service-card__title">Nutritional</h3>
                             <p class="service-card__description">
                                 Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
                             </p>
-                            <button class="btn btn--primary service-card__cta">
-                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
-                                <span>Book an Appoinment</span>
+                            <button type="button" class="btn service-card__cta">
+                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" />
+                                <span>Book an Appointment</span>
                             </button>
                         </li>
 
                         <li class="service-card">
-                            <img class="service-card__icon" src="images/Cardiology.png" alt="" aria-hidden="true" />
+                            <img class="service-card__icon" src="images/Cardiology.png" alt="" />
                             <h3 class="service-card__title">Cardiology</h3>
                             <p class="service-card__description">
                                 Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
                             </p>
-                            <button class="btn btn--primary service-card__cta">
-                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
-                                <span>Book an Appoinment</span>
+                            <button type="button" class="btn service-card__cta">
+                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" />
+                                <span>Book an Appointment</span>
                             </button>
                         </li>
 
                         <li class="service-card">
-                            <img class="service-card__icon" src="images/Ophthalmology.png" alt="" aria-hidden="true" />
+                            <img class="service-card__icon" src="images/Ophthalmology.png" alt="" />
                             <h3 class="service-card__title">Ophthalmology</h3>
                             <p class="service-card__description">
                                 Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
                             </p>
-                            <button class="btn btn--primary service-card__cta">
-                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
-                                <span>Book an Appoinment</span>
+                            <button type="button" class="btn service-card__cta">
+                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" />
+                                <span>Book an Appointment</span>
                             </button>
                         </li>
 
                         <li class="service-card">
-                            <img class="service-card__icon" src="images/Orthopedics.png" alt="" aria-hidden="true" />
+                            <img class="service-card__icon" src="images/Orthopedics.png" alt="" />
                             <h3 class="service-card__title">Orthopedics</h3>
                             <p class="service-card__description">
                                 Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
                             </p>
-                            <button class="btn btn--primary service-card__cta">
-                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
-                                <span>Book an Appoinment</span>
+                            <button type="button" class="btn service-card__cta">
+                                <img class="service-card__cta-icon" src="images/svg/whatsapp.svg" alt="" />
+                                <span>Book an Appointment</span>
                             </button>
                         </li>
                     </ul>
@@ -187,8 +203,8 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas viverra turpis habitant eu sociis
                             fermentum felis.
                         </p>
-                        <button class="btn btn--primary reservation__cta">
-                            <img src="images/svg/whatsapp.svg" alt="" aria-hidden="true" />
+                        <button type="button" class="btn btn--secondary reservation__cta">
+                            <img src="images/svg/whatsapp-secondary.svg" alt="" />
                             <span>Book an appointment</span>
                         </button>
                     </div>
@@ -197,34 +213,35 @@
 
             <section class="why-me" id="why-me">
                 <div class="container">
-                    <p class="why-me__uptitle">Why Dr. Matthew Anderson?</p>
+                    <p class="uptitle why-me__uptitle">Why Dr. Matthew Anderson?</p>
                     <iframe
                         class="why-me__video"
                         src="https://www.youtube.com/embed/A_TtwTN0_k8"
                         title="Introduction video of Dr. Anderson"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
                     <h2 class="why-me__title">A dedicated doctor with the core mission to help</h2>
                     <p class="why-me__description">
-                        orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique
                         id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate
                         tortor tincidunt.
                     </p>
-                    <div class="why-me__features">
-                        <div class="btn btn--accent why-me__item">
-                            <img src="images/svg/clock.svg" alt="" aria-hidden="true" />
+                    <ul class="why-me__features">
+                        <li class="info-card why-me__item">
+                            <img src="images/svg/clock.svg" alt="" />
                             <span>+8 years of experience</span>
-                        </div>
-                        <div class="btn btn--accent why-me__item">
-                            <img src="images/svg/check-circle.svg" alt="" aria-hidden="true" />
+                        </li>
+                        <li class="info-card why-me__item">
+                            <img src="images/svg/check-circle.svg" alt="" />
                             <span>Urgent 24 hour service</span>
-                        </div>
-                        <div class="btn btn--accent why-me__item">
-                            <img src="images/svg/plus-circle.svg" alt="" aria-hidden="true" />
+                        </li>
+                        <li class="info-card why-me__item">
+                            <img src="images/svg/plus-circle.svg" alt="" />
                             <span>High quality care</span>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -235,62 +252,78 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     </p>
 
-                    <ul class="feedback__list">
-                        <li class="feedback__item">
-                            <p class="feedback__item-description">
+                    <div class="feedback__slider">
+                        <article class="feedback__item">
+                            <blockquote class="feedback__item-quote">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                                 dolore
-                            </p>
-                            <div class="feedback__item-avatar">
-                                <img src="images/user-img.jpg" alt="Photo of patient Samy White" />
-                            </div>
-                            <h3 class="feedback__item-username">Samy White</h3>
-                            <p class="feedback__item-user-profession">Cardiology Patient</p>
-                        </li>
+                            </blockquote>
+                            <footer class="feedback__item-author">
+                                <div class="feedback__item-avatar">
+                                    <img src="images/samy-white.jpg" alt="Photo of patient Samy White" />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-username">Samy White</h3>
+                                    <p class="feedback__item-profession">Cardiology Patient</p>
+                                </div>
+                            </footer>
+                        </article>
 
-                        <li class="feedback__item">
-                            <p class="feedback__item-description">
+                        <article class="feedback__item">
+                            <blockquote class="feedback__item-quote">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                                 dolore
-                            </p>
-                            <div class="feedback__item-avatar">
-                                <img src="images/user-img.jpg" alt="Photo of patient Samy White" />
-                            </div>
-                            <h3 class="feedback__item-username">Samy White</h3>
-                            <p class="feedback__item-user-profession">Cardiology Patient</p>
-                        </li>
+                            </blockquote>
+                            <footer class="feedback__item-author">
+                                <div class="feedback__item-avatar">
+                                    <img src="images/arthur-northon.jpg" alt="Photo of patient Arthur Northon" />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-username">Arthur Northon</h3>
+                                    <p class="feedback__item-profession">Nutrion Patient</p>
+                                </div>
+                            </footer>
+                        </article>
 
-                        <li class="feedback__item">
-                            <p class="feedback__item-description">
+                        <article class="feedback__item">
+                            <blockquote class="feedback__item-quote">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                                 dolore
-                            </p>
-                            <div class="feedback__item-avatar">
-                                <img src="images/user-img.jpg" alt="Photo of patient Samy White" />
-                            </div>
-                            <h3 class="feedback__item-username">Samy White</h3>
-                            <p class="feedback__item-user-profession">Cardiology Patient</p>
-                        </li>
+                            </blockquote>
+                            <footer class="feedback__item-author">
+                                <div class="feedback__item-avatar">
+                                    <img src="images/kevin-smith.jpg" alt="Photo of patient Kevin Smith" />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-username">Kevin Smith</h3>
+                                    <p class="feedback__item-profession">Orthopedics Patient</p>
+                                </div>
+                            </footer>
+                        </article>
 
-                        <li class="feedback__item">
-                            <p class="feedback__item-description">
+                        <article class="feedback__item">
+                            <blockquote class="feedback__item-quote">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                                 dolore
-                            </p>
-                            <div class="feedback__item-avatar">
-                                <img src="images/user-img.jpg" alt="Photo of patient Samy White" />
-                            </div>
-                            <h3 class="feedback__item-username">Samy White</h3>
-                            <p class="feedback__item-user-profession">Cardiology Patient</p>
-                        </li>
-                    </ul>
+                            </blockquote>
+                            <footer class="feedback__item-author">
+                                <div class="feedback__item-avatar">
+                                    <img src="images/amanda-jackson.jpg" alt="Photo of patient Amanda Jackson" />
+                                </div>
+                                <div>
+                                    <h3 class="feedback__item-username">Amanda Jackson</h3>
+                                    <p class="feedback__item-profession">Ophthalmology Patient</p>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
 
                     <div class="feedback__controls">
-                        <button class="feedback__control feedback__control--prev" type="button" aria-label="Previous feedback">
-                            <img src="images/svg/prev-btn.svg" alt="" aria-hidden="true" />
+                        <button type="button" class="feedback__control feedback__control--prev">
+                            <img src="images/svg/prev-btn.svg" alt="" />
                         </button>
-                        <button class="feedback__control feedback__control--next" type="button" aria-label="Next feedback">
-                            <img src="images/svg/next-btn.svg" alt="" aria-hidden="true" />
+                        <button type="button" class="feedback__control feedback__control--next">
+                            <img src="images/svg/next-btn.svg" alt="" />
                         </button>
                     </div>
                 </div>
@@ -300,38 +333,43 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__info">
-                    <div class="footer__logo">
-                        <img src="images/icon/footer-icon-plus.png" class="footer__logo-ico" alt="" aria-hidden="true" />
-                        <a href="index.html">Doctor</a>
-                    </div>
-                    <p class="footer__info-address">8 W. South St.Buford, GA 30518<br />5Briarwood LaneVienna, VA 22180 RER</p>
+                    <a href="index.html" class="footer__logo">
+                        <img src="images/footer-icon-plus.png" class="footer__logo-ico" alt="" />
+                        <span>Doctor</span>
+                    </a>
+                    <address class="footer__info-address">
+                        8 W. South St.Buford, GA 30518<br />
+                        5 Briarwood LaneVienna, VA 22180 RER
+                    </address>
                     <div class="footer__info-social">
-                        <a href="https://www.youtube.com/" target="_blank"
-                            ><img src="images/svg/youtube.svg" alt="" aria-hidden="true"
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                            ><img src="images/svg/youtube.svg" alt=""
                         /></a>
-                        <a href="http://facebook.com/" target="_blank"><img src="images/svg/facebook.svg" alt="" aria-hidden="true" /></a>
-                        <a href="https://www.whatsapp.com/" target="_blank"
-                            ><img src="images/svg/whatsapp.svg" alt="" aria-hidden="true"
+                        <a href="http://facebook.com/" target="_blank" rel="noopener noreferrer"
+                            ><img src="images/svg/facebook.svg" alt=""
+                        /></a>
+                        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer"
+                            ><img src="images/svg/whatsapp.svg" alt=""
                         /></a>
                     </div>
                 </div>
                 <div class="footer__nav">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <p class="footer__nav-title">Company Info</p>
+                            <h3 class="footer__nav-title">Company Info</h3>
                             <a href="#about" class="footer__nav-link">About</a>
                             <a href="#services" class="footer__nav-link">Services</a>
                             <a href="#blog" class="footer__nav-link">Blog</a>
                         </li>
                         <li class="footer__nav-item">
-                            <p class="footer__nav-title">Book Now</p>
+                            <h3 class="footer__nav-title">Book Now</h3>
                             <a href="#reservation" class="footer__nav-link">Appointment</a>
                         </li>
                         <li class="footer__nav-item">
-                            <p class="footer__nav-title">Contact</p>
+                            <h3 class="footer__nav-title">Contact</h3>
                             <a href="tel:+1123456789" class="footer__nav-link">+1 123456789</a>
                             <a href="mailto:remmcal@mail.com" class="footer__nav-link">remmcal@mail.com</a>
-                            <a href="#tel" class="footer__nav-link">Phone: +1 12345678</a>
+                            <a href="tel:+1123456789" class="footer__nav-link">Phone: +1 12345678</a>
                         </li>
                     </ul>
                 </div>
