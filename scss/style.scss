@@ -7,6 +7,7 @@
 
 body {
     margin: 0;
+    background-color: #fff;
     font-family: $ff-primary;
     font-weight: 400;
     font-size: 18px;
@@ -52,9 +53,17 @@ body {
 }
 
 // --- Стилі для заголовків та тексту ---
-h1,
-h2 {
+h1 {
+    margin: 0;
     color: $color-text-main;
+}
+
+h2 {
+    margin: 14px 0 14px 0;
+    color: $color-text-main;
+    font-family: $ff-secondary;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 h3,
@@ -76,12 +85,12 @@ p {
     background-color: $color-bg-page;
 
     .container {
-        padding: 32px 0 0px;
+        padding: 32px 0 0;
     }
 
-    //Доробити плюсик
     &__logo {
         text-decoration: none;
+        position: relative;
     }
 
     &__logo span {
@@ -90,6 +99,21 @@ p {
         background: $color-bg-info;
         background-clip: text;
         color: transparent;
+    }
+
+    &__logo-ico {
+        position: absolute;
+        top: -5px;
+        right: -25px;
+        width: 30px;
+        height: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
     }
 
     &__nav {
@@ -126,11 +150,12 @@ p {
 
 // --- Hero ---
 .hero {
-    padding: 100px 0 146px;
+    padding: 100px 0 0px;
     border-radius: 0 0 32px 32px;
     background-color: $color-bg-page;
 
     &__inner {
+        margin-bottom: 56px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -142,6 +167,7 @@ p {
     }
 
     &__title {
+        margin: 10px 0 24px;
         font-family: $ff-secondary;
         font-weight: 700;
         font-size: 48px;
@@ -149,6 +175,8 @@ p {
     }
 
     &__description {
+        margin-bottom: 24px;
+        color: $color-text-body;
         font-family: $ff-primary;
         font-size: 16px;
         line-height: 150%;
@@ -156,20 +184,19 @@ p {
 
     &__img-wrapper {
         width: auto;
+        margin-right: -120px;
     }
 
     &__img {
-        width: 678px;
-        max-width: 100%;
-        height: auto;
+        max-width: initial;
+        display: block;
     }
 
     &__benefits {
+        position: relative;
+        top: 44px;
         margin: 0;
         display: flex;
-        position: relative;
-        top: 96px;
-        justify-content: space-between;
         gap: 28px;
     }
 
@@ -205,13 +232,68 @@ p {
     }
 }
 
-.why-me {
-    &__video {
-        width: 1012px;
-        height: 567px;
-        aspect-ratio: 16 / 9;
-        border: none;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.about-me {
+    padding: 224px 0 145px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__img-wrapper {
+        img {
+            display: block;
+            width: 586px;
+            max-width: auto;
+            height: auto;
+        }
+    }
+
+    &__description {
+        margin-bottom: 24px;
+        color: $color-text-body;
+        font-family: $ff-primary;
+        font-size: 16px;
+        line-height: 150%;
     }
 }
+
+.services {
+    background-color: $color-bg-page;
+
+    &__inner {
+        padding-top: 124px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__description {
+        margin-bottom: 24px;
+        color: $color-text-body;
+        font-family: $ff-primary;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__img-wrppper {
+        img {
+            display: block;
+            width: 628px;
+            max-width: auto;
+            height: auto;
+        }
+    }
+}
+
+// .why-me {
+//     &__video {
+//         width: 1012px;
+//         height: 567px;
+//         aspect-ratio: 16 / 9;
+//         border: none;
+//         border-radius: 20px;
+//         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+//     }
+// }
