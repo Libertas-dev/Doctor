@@ -12,6 +12,7 @@ $color-primary: linear-gradient(141deg, #3a8ef6 0%, #6f3afa 100%); // Основ
 $color-bg-page: #f2f7ff; // Світло-блакитний фон сторінки
 $color-bg-card: #ffffff; // Білий для карток
 $color-shadow-card: 0 8px 23px 0 rgba(65, 132, 247, 0.24); // Тінь для карток
+$color-shadow-card-img: 0 14px 23px 0 rgba(0, 191, 165, 0.15); // Тінь для фото карток
 $color-bg-info: linear-gradient(145deg, #1678f2 0%, #65a8fb 100%); // Інформаційниі блоки, переваги
 
 $color-text-main: #031432; // Темно-синій (Заголовки)
@@ -22,11 +23,16 @@ $color-btn-hover: #3a8ef6; // Header - nav
 // --- Buttons ---
 $btn-color: #fff;
 $btn-bgcolor: $color-primary;
+$btn-width: 282px;
+$btn-height: 56px;
 $btn-size: 18px;
 $btn-weight: 600;
 $btn-radius: 100px;
 $btn-padding: 16px 28px;
 $btn-shadow: 0 8px 23px 0 rgba(65, 132, 247, 0.24);
+
+$btn-width-primary: 184px;
+$btn-height-primary: 56px;
 
 // --- Buttons (secondary)---
 $btn-color-secondary: #3a8ef6;
