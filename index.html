@@ -30,6 +30,9 @@
                             <a href="#contact" class="header__menu-link">Contact</a>
                         </li>
                     </ul>
+                    <button class="burger">
+                        <span></span>
+                    </button>
                     <button type="button" class="btn btn--primary header__cta">
                         <img src="images/svg/message-icon.svg" alt="" />
                         <span>Book Now</span>
@@ -260,6 +263,25 @@
                 <div class="container">
                     <p class="uptitle reservation__uptitle">Book an appointment</p>
                     <div class="reservation__wrapper">
+                        <div class="plus plus--1">
+                            <img src="images/svg/plus-icon.svg" alt="" />
+                        </div>
+                        <div class="plus plus--2">
+                            <img src="images/svg/plus-icon.svg" alt="" />
+                        </div>
+                        <div class="plus plus--3">
+                            <img src="images/svg/plus-icon.svg" alt="" />
+                        </div>
+                        <div class="plus plus--4">
+                            <img src="images/svg/plus-icon.svg" alt="" />
+                        </div>
+                        <div class="plus plus--5">
+                            <img src="images/svg/plus-icon.svg" alt="" />
+                        </div>
+                        <div class="plus plus--6">
+                            <img src="images/svg/plus-icon.svg" alt="" />
+                        </div>
+
                         <div class="reservation__content">
                             <h2 class="reservation__title">Schedule a virtual or presential appointment today</h2>
                             <p class="reservation__description">
@@ -278,20 +300,36 @@
             <section class="why-me" id="why-me">
                 <div class="container">
                     <p class="uptitle why-me__uptitle">Why Dr. Matthew Anderson?</p>
-                    <iframe
-                        class="why-me__video"
-                        src="https://www.youtube.com/embed/A_TtwTN0_k8"
-                        title="Introduction video of Dr. Anderson"
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+
+                    <div class="why-me__video-container">
+                        <input type="checkbox" id="video-trigger" class="why-me__checkbox" />
+
+                        <label for="video-trigger" class="why-me__wrapper">
+                            <img src="images/video-cover.jpg" alt="Video preview" class="why-me__poster" />
+
+                            <div class="play-btn">
+                                <img src="images/svg/play.svg" alt="Play" />
+                            </div>
+                        </label>
+
+                        <iframe
+                            class="why-me__iframe"
+                            src="https://www.youtube.com/embed/A_TtwTN0_k8"
+                            title="Introduction video of Dr. Anderson"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
                     <h2 class="why-me__title">A dedicated doctor with the core mission to help</h2>
+
                     <p class="why-me__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique
                         id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate
                         tortor tincidunt.
                     </p>
+
                     <ul class="why-me__features">
                         <li class="info-card why-me__item">
                             <img src="images/svg/clock.svg" alt="" />
@@ -318,67 +356,75 @@
 
                     <div class="feedback__slider">
                         <article class="feedback__item">
-                            <blockquote class="feedback__item-quote">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore
-                            </blockquote>
-                            <footer class="feedback__item-author">
-                                <div class="feedback__item-avatar">
-                                    <img src="images/samy-white.jpg" alt="Photo of patient Samy White" />
-                                </div>
-                                <div>
-                                    <h3 class="feedback__item-username">Samy White</h3>
-                                    <p class="feedback__item-profession">Cardiology Patient</p>
-                                </div>
-                            </footer>
+                            <div class="feedback__item-wrapper">
+                                <blockquote class="feedback__item-quote">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore
+                                </blockquote>
+                                <footer class="feedback__item-author">
+                                    <div class="feedback__item-avatar">
+                                        <img src="images/samy-white.jpg" alt="Photo of patient Samy White" />
+                                    </div>
+                                    <div class="feedback__item-meta">
+                                        <h3 class="feedback__item-username">Samy White</h3>
+                                        <p class="feedback__item-profession">Cardiology Patient</p>
+                                    </div>
+                                </footer>
+                            </div>
                         </article>
 
                         <article class="feedback__item">
-                            <blockquote class="feedback__item-quote">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore
-                            </blockquote>
-                            <footer class="feedback__item-author">
-                                <div class="feedback__item-avatar">
-                                    <img src="images/arthur-northon.jpg" alt="Photo of patient Arthur Northon" />
-                                </div>
-                                <div>
-                                    <h3 class="feedback__item-username">Arthur Northon</h3>
-                                    <p class="feedback__item-profession">Nutrion Patient</p>
-                                </div>
-                            </footer>
+                            <div class="feedback__item-wrapper">
+                                <blockquote class="feedback__item-quote">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore
+                                </blockquote>
+                                <footer class="feedback__item-author">
+                                    <div class="feedback__item-avatar">
+                                        <img src="images/arthur-northon.jpg" alt="Photo of patient Arthur Northon" />
+                                    </div>
+                                    <div>
+                                        <h3 class="feedback__item-username">Arthur Northon</h3>
+                                        <p class="feedback__item-profession">Nutrion Patient</p>
+                                    </div>
+                                </footer>
+                            </div>
                         </article>
 
                         <article class="feedback__item">
-                            <blockquote class="feedback__item-quote">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore
-                            </blockquote>
-                            <footer class="feedback__item-author">
-                                <div class="feedback__item-avatar">
-                                    <img src="images/kevin-smith.jpg" alt="Photo of patient Kevin Smith" />
-                                </div>
-                                <div>
-                                    <h3 class="feedback__item-username">Kevin Smith</h3>
-                                    <p class="feedback__item-profession">Orthopedics Patient</p>
-                                </div>
-                            </footer>
+                            <div class="feedback__item-wrapper">
+                                <blockquote class="feedback__item-quote">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore
+                                </blockquote>
+                                <footer class="feedback__item-author">
+                                    <div class="feedback__item-avatar">
+                                        <img src="images/kevin-smith.jpg" alt="Photo of patient Kevin Smith" />
+                                    </div>
+                                    <div>
+                                        <h3 class="feedback__item-username">Kevin Smith</h3>
+                                        <p class="feedback__item-profession">Orthopedics Patient</p>
+                                    </div>
+                                </footer>
+                            </div>
                         </article>
 
                         <article class="feedback__item">
-                            <blockquote class="feedback__item-quote">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore
-                            </blockquote>
-                            <footer class="feedback__item-author">
-                                <div class="feedback__item-avatar">
-                                    <img src="images/amanda-jackson.jpg" alt="Photo of patient Amanda Jackson" />
-                                </div>
-                                <div>
-                                    <h3 class="feedback__item-username">Amanda Jackson</h3>
-                                    <p class="feedback__item-profession">Ophthalmology Patient</p>
-                                </div>
-                            </footer>
+                            <div class="feedback__item-wrapper">
+                                <blockquote class="feedback__item-quote">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore
+                                </blockquote>
+                                <footer class="feedback__item-author">
+                                    <div class="feedback__item-avatar">
+                                        <img src="images/amanda-jackson.jpg" alt="Photo of patient Amanda Jackson" />
+                                    </div>
+                                    <div>
+                                        <h3 class="feedback__item-username">Amanda Jackson</h3>
+                                        <p class="feedback__item-profession">Ophthalmology Patient</p>
+                                    </div>
+                                </footer>
+                            </div>
                         </article>
                     </div>
 
@@ -396,49 +442,56 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="footer__info">
-                    <a href="index.html" class="footer__logo">
-                        <img src="images/footer-icon-plus.png" class="footer__logo-ico" alt="" />
-                        <span>Doctor</span>
-                    </a>
-                    <address class="footer__info-address">
-                        8 W. South St.Buford, GA 30518<br />
-                        5 Briarwood LaneVienna, VA 22180 RER
-                    </address>
-                    <div class="footer__info-social">
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
-                            ><img src="images/svg/youtube.svg" alt=""
-                        /></a>
-                        <a href="http://facebook.com/" target="_blank" rel="noopener noreferrer"
-                            ><img src="images/svg/facebook.svg" alt=""
-                        /></a>
-                        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer"
-                            ><img src="images/svg/whatsapp.svg" alt=""
-                        /></a>
+                <div class="footer__wrapper">
+                    <div class="footer__info">
+                        <a href="index.html" class="footer__logo">
+                            <span>Doctor</span>
+                            <div class="footer__logo-ico">
+                                <img src="images/svg/footer-icon-plus.svg" class="footer__logo-ico" alt="" />
+                            </div>
+                        </a>
+                        <address class="footer__info-address">
+                            8 W. South St.Buford, GA 30518<br />
+                            5 Briarwood LaneVienna, VA 22180 RER
+                        </address>
+                        <div class="footer__info-social">
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/svg/youtube.svg" alt="" />
+                            </a>
+                            <a href="http://facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/svg/facebook.svg" alt="" />
+                            </a>
+                            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/svg/whatsapp.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <h3 class="footer__nav-title">Company Info</h3>
+                                <a href="#about" class="footer__nav-link">About</a>
+                                <a href="#services" class="footer__nav-link">Services</a>
+                                <a href="#blog" class="footer__nav-link">Blog</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <h3 class="footer__nav-title">Book Now</h3>
+                                <a href="#reservation" class="footer__nav-link">Appointment</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <h3 class="footer__nav-title">Contact</h3>
+                                <a href="tel:+1123456789" class="footer__nav-link">+1 123456789</a>
+                                <a href="mailto:remmcal@mail.com" class="footer__nav-link">remmcal@mail.com</a>
+                                <a href="tel:+1123456789" class="footer__nav-link">Phone: +1 12345678</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="footer__nav">
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                            <h3 class="footer__nav-title">Company Info</h3>
-                            <a href="#about" class="footer__nav-link">About</a>
-                            <a href="#services" class="footer__nav-link">Services</a>
-                            <a href="#blog" class="footer__nav-link">Blog</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <h3 class="footer__nav-title">Book Now</h3>
-                            <a href="#reservation" class="footer__nav-link">Appointment</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <h3 class="footer__nav-title">Contact</h3>
-                            <a href="tel:+1123456789" class="footer__nav-link">+1 123456789</a>
-                            <a href="mailto:remmcal@mail.com" class="footer__nav-link">remmcal@mail.com</a>
-                            <a href="tel:+1123456789" class="footer__nav-link">Phone: +1 12345678</a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="footer__line"></div>
                 <p class="footer__nav-copyright">© Doctor all rights 2023 - Designed by remmcal</p>
             </div>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>

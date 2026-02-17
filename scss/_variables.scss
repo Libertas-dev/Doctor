@@ -4,13 +4,13 @@ $ff-secondary: 'Poppins', sans-serif;
 
 // --- Container ---
 $container-width: 1110px;
-$container-padding: 35px 0 48px;
 
 // --- Colors ---
 $color-primary: linear-gradient(141deg, #3a8ef6 0%, #6f3afa 100%); // Основний синій (Кнопки, іконки)
 
 $color-bg-page: #f2f7ff; // Світло-блакитний фон сторінки
 $color-bg-card: #ffffff; // Білий для карток
+$color-bg-footer: #1678f2;
 $color-shadow-card: 0 8px 23px 0 rgba(65, 132, 247, 0.24); // Тінь для карток
 $color-shadow-card-img: 0 14px 23px 0 rgba(0, 191, 165, 0.15); // Тінь для фото карток
 $color-bg-info: linear-gradient(145deg, #1678f2 0%, #65a8fb 100%); // Інформаційниі блоки, переваги
@@ -25,7 +25,7 @@ $btn-color: #fff;
 $btn-bgcolor: $color-primary;
 $btn-width: 282px;
 $btn-height: 56px;
-$btn-size: 18px;
+$btn-size: 17px;
 $btn-weight: 600;
 $btn-radius: 100px;
 $btn-padding: 16px 28px;
